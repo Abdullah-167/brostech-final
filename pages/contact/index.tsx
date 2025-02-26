@@ -33,7 +33,7 @@ export default function Career() {
           <div className="space-y-4">
             <ContactItem icon={<FiPhone />} title="+923364987786" subtitle="Call us: Sat - Thu 1pm - 9pm" />
             <ContactItem icon={<FiMapPin />} title="Sargodha Road, Faisalabad" subtitle="M57 Pearl City" />
-            <ContactItem icon={<FiMail />} title="info@broshtech.com" subtitle="Drop us a line anytime!" />
+            <ContactItem icon={<FiMail />} title="hr@broshtech.com" subtitle="Drop us a line anytime!" />
           </div>
         </div>
 
