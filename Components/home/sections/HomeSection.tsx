@@ -8,8 +8,8 @@ export default function HomeSection() {
     <Container>
       <div className="home-section flex flex-wrap lg:flex-nowrap justify-between items-center w-full mt-8">
         {/* Left Section - Text */}
-        <div className=" w-full text-center md:text-left">
-          <h1 className=" text-3xl md:text-5xl font-bold pb-7">
+        <div className=" w-full text-left">
+          <h1 className=" text-3xl md:text-5xl font-bold pb-2 sm:pb-7">
             We build your{" "}
             <span className="text-primary text-4xl md:text-6xl"> Brand </span>,
             so you can focus on{" "}
@@ -18,7 +18,7 @@ export default function HomeSection() {
               Success.{" "}
             </span>
           </h1>
-          <h3 className="lg:text-4xl text-3xl pb-4">
+          <h3 className="lg:text-4xl text-2xl sm:pb-4">
             Premier Web & Digital Marketing Agency
           </h3>
 

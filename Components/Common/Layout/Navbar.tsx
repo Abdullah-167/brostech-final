@@ -9,11 +9,11 @@ import Container from "../../Container";
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState<string>("home");
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<any>(null);
 
   const timeoutId = useRef<NodeJS.Timeout | null>(null);
 
-  const handleMouseEnter = (title: string) => {
+  const handleMouseEnter = (title: string | null) => {
     if (timeoutId.current) clearTimeout(timeoutId.current);
     setHoveredItem(title);
   };
@@ -25,13 +25,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full bg-white z-[1000]">
+    <div className="fixed md:block hidden w-full bg-white z-[1000]">
       <Container>
         <div className="flex flex-col lg:flex-row justify-between items-center bg-white border-b py-3">
           {/* Logo and Mobile Menu Icon */}
           <div className="flex items-center justify-between w-full lg:w-auto">
             <div className="flex items-center">
-              <Link href={"/"}>
+              <Link onClick={() => handleMouseEnter(null)} href={"/"}>
                 <Image
                   src="/mainlogo.png"
                   alt="BroshTech Logo"
@@ -62,7 +62,11 @@ const Navbar = () => {
               onMouseEnter={() => setHoveredItem("home")}
               onMouseLeave={() => setHoveredItem(null)}
             >
-              <Link href="/" legacyBehavior>
+              <Link
+                onClick={() => handleMouseEnter(null)}
+                href="/"
+                legacyBehavior
+              >
                 <a className="hover:text-primary transition duration-300">
                   Home
                 </a>
@@ -83,7 +87,11 @@ const Navbar = () => {
                 }`}
                 onClick={() => setSelectedItem("solution")}
               >
-                <Link href="/services" legacyBehavior>
+                <Link
+                  onClick={() => handleMouseEnter(null)}
+                  href="/services"
+                  legacyBehavior
+                >
                   <a className="hover:text-primary transition duration-300">
                     Solution
                   </a>
@@ -102,6 +110,7 @@ const Navbar = () => {
                     </h3>
                     <ul className="space-y-5 lg:space-y-5 mt-5 lg:mt-5 flex flex-col">
                       <Link
+                        onClick={() => handleMouseEnter(null)}
                         className="hover:text-primary"
                         href="/services/wordpress"
                       >
@@ -109,6 +118,7 @@ const Navbar = () => {
                       </Link>
 
                       <Link
+                        onClick={() => handleMouseEnter(null)}
                         className="hover:text-primary"
                         href="/services/graphics-designing"
                       >
@@ -116,6 +126,7 @@ const Navbar = () => {
                       </Link>
 
                       <Link
+                        onClick={() => handleMouseEnter(null)}
                         className="hover:text-primary"
                         href="/services/graphics-designing"
                       >
@@ -123,6 +134,7 @@ const Navbar = () => {
                       </Link>
 
                       <Link
+                        onClick={() => handleMouseEnter(null)}
                         className="hover:text-primary"
                         href="/services/digital-marketing"
                       >
@@ -140,7 +152,10 @@ const Navbar = () => {
                       <div className="border p-5 flex flex-col">
                         <FaShopify className="text-primary text-3xl" />
                         <p className="mt-2 font-semibold ">
-                          <Link href="/services/shopify-development">
+                          <Link
+                            onClick={() => handleMouseEnter(null)}
+                            href="/services/shopify-development"
+                          >
                             {" "}
                             Shopify Design & Development
                           </Link>
@@ -149,7 +164,10 @@ const Navbar = () => {
                       <div className="border p-5 flex flex-col">
                         <MdOutlinePhoneAndroid className="text-primary text-3xl" />
                         <p className="mt-2 font-semibold ">
-                          <Link href="/services/mobile-app-development">
+                          <Link
+                            onClick={() => handleMouseEnter(null)}
+                            href="/services/mobile-app-development"
+                          >
                             {" "}
                             Mobile Apps Development
                           </Link>
@@ -158,7 +176,10 @@ const Navbar = () => {
                       <div className="border p-5 flex flex-col">
                         <FaBullhorn className="text-primary text-3xl" />
                         <p className="mt-2 font-semibold ">
-                          <Link href="/services/digital-marketing">
+                          <Link
+                            onClick={() => handleMouseEnter(null)}
+                            href="/services/digital-marketing"
+                          >
                             Digital Marketing
                           </Link>
                         </p>
@@ -166,7 +187,10 @@ const Navbar = () => {
                       <div className="border p-5 flex flex-col">
                         <FaCode className="text-primary text-3xl" />
                         <p className="mt-2 font-semibold ">
-                          <Link href="/services/custom-development">
+                          <Link
+                            onClick={() => handleMouseEnter(null)}
+                            href="/services/custom-development"
+                          >
                             {" "}
                             Full Stack Development
                           </Link>
@@ -193,7 +217,11 @@ const Navbar = () => {
                 onClick={() => setSelectedItem("company")}
               >
                 <p className="hover:text-primary transition duration-300">
-                  <Link href="/company" legacyBehavior>
+                  <Link
+                    onClick={() => handleMouseEnter(null)}
+                    href="/company"
+                    legacyBehavior
+                  >
                     Company
                   </Link>
                 </p>
@@ -208,12 +236,20 @@ const Navbar = () => {
                 <div className="fixed top-[22px] mt-10 top-25 bg-white shadow-lg rounded-md p-5 items-center flex flex-col lg:flex-row gap-10 z-50 px-4 ">
                   <div className="flex flex-col gap-y-1">
                     <div>
-                      <Link className="hover:text-primary" href="/company">
+                      <Link
+                        onClick={() => handleMouseEnter(null)}
+                        className="hover:text-primary"
+                        href="/company"
+                      >
                         About us
                       </Link>
                     </div>
                     <div>
-                      <Link className="hover:text-primary" href="#">
+                      <Link
+                        onClick={() => handleMouseEnter(null)}
+                        className="hover:text-primary"
+                        href="#"
+                      >
                         Team
                       </Link>
                     </div>
@@ -233,7 +269,11 @@ const Navbar = () => {
               onMouseEnter={() => setHoveredItem("career")}
               onMouseLeave={() => setHoveredItem(null)}
             >
-              <Link href="/contact" legacyBehavior>
+              <Link
+                onClick={() => handleMouseEnter(null)}
+                href="/contact"
+                legacyBehavior
+              >
                 <a className="hover:text-primary transition duration-300">
                   Contact Us
                 </a>
@@ -243,7 +283,7 @@ const Navbar = () => {
 
           {/* Schedule Button (Visible on Large Screens) */}
           <div className="hidden lg:block mt-5 lg:mt-0">
-            <Link href={"/contact"}>
+            <Link onClick={() => handleMouseEnter(null)} href={"/contact"}>
               <button className="bg-primary text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-primary border hover:border-primary transition duration-300 py-4 px-6">
                 Schedule a Free Consultation
               </button>

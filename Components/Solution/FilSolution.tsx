@@ -20,16 +20,15 @@ const FilSoultion = () => {
       <div className="relative max-w-[1300px] mx-auto z-10 flex items-center px-6 md:px-12 lg:px-20 h-full ">
         <div className=" text-white space-y-6">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-6xl">
-            Fillinx Solutions is a place to grow
+            At BroshTech, growth knows no limits.
           </h2>
           <p className="text-lg md:text-xl lg:text-2xl leading-relaxed max-w-[700px]">
-            Fillinx Solutions is rapidly growing across the country, both
-            organically and by bringing in like-minded managed IT service
-            providers (MSPs). We’re building a national network that can provide
-            exceptional levels of service to our clients.
+            BroshTech is growing swiftly nationwide, strengthening its presence
+            through organic expansion and partnerships with visionary digital
+            experts. Our goal is to create a powerful network that delivers
+            outstanding services to our clients.
           </p>
         </div>
-        
       </div>
     </div>
   );

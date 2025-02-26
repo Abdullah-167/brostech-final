@@ -16,11 +16,11 @@ const Hero = () => {
             Services & Solutions
           </h1>
           <p className="text-xl text-center max-w-[800px] mx-auto mb-20">
-            At Fillinx Solutions, we're a leading software house specializing in
-            website development (Shopify, Webflow, WordPress, Hybrid
-            Development, etc.), Mobile Apps Development, Digital Marketing (SEO,
-            SEM, SMM), and graphics design. Elevate your online presence with
-            our expert solutions.
+            At BroshTech, we are a premier digital solutions provider
+            specializing in website development (Shopify, Webflow, WordPress,
+            Hybrid Development), mobile app development, digital marketing (SEO,
+            SEM, SMM), and graphic design. Enhance your brand’s online presence
+            with our expert-driven strategies.
           </p>
           <div>
             <Image
