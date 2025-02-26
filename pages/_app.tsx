@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import Footer from "@/Components/Common/Layout/Footer";
 import Navbar from "@/Components/Common/Layout/Navbar";
 import ResNav from "@/Components/Common/Layout/ResNav";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
@@ -42,6 +43,9 @@ function MyApp({ Component, pageProps }: any) {
         <Navbar />
       </div>
       <div className="pt-24">
+      <Head>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
         <Component {...pageProps} />
       </div>
       <Footer />

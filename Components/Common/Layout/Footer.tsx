@@ -64,9 +64,11 @@ export default function Footer() {
           <h1 className="text-4xl md:text-6xl font-extrabold text-lime-400 leading-tight mt-4 mb-7">
             Innovative Software Solutions?
           </h1>
-          <button className="bg-primary text-white text-lg font-semibold rounded-lg shadow-md hover:bg-transparent hover:text-primary border border-primary transition duration-300 py-3 px-6">
-            Schedule a Free Consultation Today
-          </button>
+          <Link href={"/contact"}>
+            <button className="bg-primary text-white text-lg font-semibold rounded-lg shadow-md hover:bg-transparent hover:text-primary border border-primary transition duration-300 py-3 px-6">
+              Schedule a Free Consultation Today
+            </button>
+          </Link>
         </div>
       </div>
       <Container>
