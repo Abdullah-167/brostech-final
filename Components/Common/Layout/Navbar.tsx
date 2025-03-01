@@ -248,7 +248,7 @@ const Navbar = () => {
                       <Link
                         onClick={() => handleMouseEnter(null)}
                         className="hover:text-primary"
-                        href="#"
+                        href="/team"
                       >
                         Team
                       </Link>

@@ -13,7 +13,7 @@ export default function CardData() {
         <div className="p-6 bg-white  rounded-lg text-center">
             <LuRectangleVertical color='blue' size={44} className="mx-auto"/>
             <h1 className='text-2xl font-bold py-3'>People</h1>
-            <h5 className='text-lg'>At Fillinx Solutions, our people are our greatest asset. We foster a culture of collaboration, continuous learning, and mutual respect, enabling every team member to unleash their full potential and deliver exceptional results for our clients.</h5>
+            <h5 className='text-lg'>At Broshtech, our people are our greatest asset. We foster a culture of collaboration, continuous learning, and mutual respect, enabling every team member to unleash their full potential and deliver exceptional results for our clients.</h5>
         </div>
 
         {/* Card 2 */}

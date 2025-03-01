@@ -32,7 +32,7 @@ const Hero = () => {
             />
           </div>
           <p className="text-xl text-center max-w-[800px] mx-auto mb-20">
-            At Fillinx Solutions, we blend creativity with technical expertise
+            At Brostech, we blend creativity with technical expertise
             to deliver exceptional digital solutions. From crafting visually
             stunning websites on platforms like Shopify, Webflow, and WordPress,
             to driving targeted traffic through SEO, SEM, and SMM, we ensure

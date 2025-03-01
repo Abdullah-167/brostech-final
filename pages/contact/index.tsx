@@ -38,6 +38,7 @@ export default function Career() {
         </div>
 
         {/* Right Section - Contact Form */}
+        
         <div className="p-6 lg:col-span-8 bg-white">
           <>
             <h2 className="text-2xl md:text-3xl font-semibold text-[#54d119] mb-4">
