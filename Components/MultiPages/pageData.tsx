@@ -148,7 +148,6 @@ export const pagesData = [
           subHeading: "Expert solutions for a seamless online presence.",
           cardsDetail: [
             {
-              
               imgae: "/Wordpress_Icon.png",
               heading: "Custom WordPress Development",
               des: "Tailor-made WordPress websites designed to meet your business objectives and provide an outstanding user experience.",
@@ -251,7 +250,6 @@ export const pagesData = [
           subHeading: "Comprehensive solutions to grow your online business.",
           cardsDetail: [
             {
-              
               imgae: "/shopifyIcon.png",
               heading: "Custom Shopify Store Development",
               des: "Build a stunning and conversion-focused Shopify store tailored to your brand’s needs.",
@@ -267,7 +265,6 @@ export const pagesData = [
               des: "Enhance your store’s functionality with custom Shopify apps and seamless integrations.",
             },
             {
-              
               imgae: "/Migration-Services.png",
               heading: "Shopify Store Migration",
               des: "Seamlessly migrate your store to Shopify without losing data or SEO rankings.",

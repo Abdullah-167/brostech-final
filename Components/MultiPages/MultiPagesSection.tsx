@@ -71,7 +71,7 @@ const MultiPagesSection = ({ data }: any) => {
             ].map((heading, index) => (
               <div
                 key={index}
-                className={`p-6 border border-blue-500 rounded-3xl transition-all duration-300 ease-in-out 
+                className={`p-6 border border-primary rounded-3xl transition-all duration-300 ease-in-out 
                   bg-white hover:bg-gray-100 group overflow-hidden
                   ${openSection === index ? "bg-gray-200 shadow-md" : ""}`}
               >
@@ -92,7 +92,7 @@ const MultiPagesSection = ({ data }: any) => {
                   </p>
                   <div>
                     <FaPlus
-                      className={`text-2xl text-gray-900 group-hover:text-blue-600 transition-all duration-300 
+                      className={`text-2xl text-gray-900 group-hover:text-primary transition-all duration-300 
                          ${openSection === index ? "rotate-45" : "rotate-0"}`}
                     />
                   </div>
@@ -124,7 +124,7 @@ const MultiPagesSection = ({ data }: any) => {
             <p className="mt-2 max-w-full lg:max-w-[600px]">
               {data?.ImageWithText[0]?.subheading}
             </p>
-            <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg">
+            <button className="mt-4 px-6 py-2 bg-primary text-white rounded-lg">
               {data?.ImageWithText[0]?.button}
             </button>
           </div>
