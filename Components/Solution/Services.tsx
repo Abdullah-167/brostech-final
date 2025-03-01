@@ -29,7 +29,7 @@ const Services = () => {
             {ExpertsData.map((item, index) => (
               <div
                 key={index}
-                className="max-w-full w-full p-6 hover:shadow-xl transition duration-300 ease-in-out border hover:border-blue-500 rounded-md"
+                className="max-w-full w-full p-6 hover:shadow-xl transition duration-300 ease-in-out border hover:border-primary rounded-md"
               >
                 <div className="text-6xl mb-4 text-primary">{item.icon}</div>
                 <h4 className="text-xl md:text-2xl lg:text-3xl font-bold pb-4">
