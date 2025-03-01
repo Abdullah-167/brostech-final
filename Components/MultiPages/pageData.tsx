@@ -242,7 +242,7 @@ export const pagesData = [
           subheading:
             "Shopify is a powerful and user-friendly eCommerce platform trusted by over a million businesses. With its flexibility, scalability, and vast ecosystem, it’s the perfect solution for brands of all sizes.",
           button: "Schedule A Free Consultation",
-          Image: "/shopify-benefits.jpg",
+          Image: "/shopifydev.webp",
         },
       ],
       cardsSection: [
@@ -449,7 +449,7 @@ export const pagesData = [
           subheading:
             "Off-the-shelf solutions may not always fit your business needs. Custom development ensures a perfect match for your operations, improving efficiency, security, and scalability.",
           button: "Schedule A Free Consultation",
-          Image: "/customedev.webp",
+          Image: "/customdev.webp",
         },
       ],
       cardsSection: [
@@ -551,7 +551,7 @@ export const pagesData = [
           subheading:
             "Our team delivers high-quality mobile applications that prioritize performance, scalability, and user experience. We turn your ideas into fully functional mobile apps that captivate your audience and drive business success.",
           button: "Schedule A Free Consultation",
-          Image: "/mobile-app-benefits.jpg",
+          Image: "/appdev.jpg",
         },
       ],
       cardsSection: [
