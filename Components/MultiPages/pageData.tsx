@@ -560,47 +560,47 @@ export const pagesData = [
           subHeading: "Custom-built apps that meet your business goals.",
           cardsDetail: [
             {
-              imgae: "/android-app.jpg",
+              imgae: "/Mobile-App-Design-Development.png",
               heading: "Android App Development",
               des: "Develop feature-rich, user-friendly Android apps optimized for performance and scalability.",
             },
             {
-              imgae: "/ios-app.jpg",
+              imgae: "/Hybrid-App-Icon.png",
               heading: "iOS App Development",
               des: "Create high-quality iOS applications that provide a seamless and intuitive experience for Apple device users.",
             },
             {
-              imgae: "/cross-platform.jpg",
+              imgae: "/Plugin_Development.png",
               heading: "Cross-Platform App Development",
               des: "Build apps that work across both iOS and Android with cost-effective cross-platform development solutions.",
             },
             {
-              imgae: "/app-ui.jpg",
+              imgae: "/Hybrid-App-Icon.png",
               heading: "Mobile App UI/UX Design",
               des: "Design intuitive and visually appealing user interfaces to ensure smooth navigation and a great user experience.",
             },
             {
-              imgae: "/app-integration.jpg",
+              imgae: "/Customization_Integration.png",
               heading: "App Integration Services",
               des: "Seamlessly integrate third-party services like payment gateways, APIs, and CRM systems into your mobile app.",
             },
             {
-              imgae: "/app-testing.jpg",
+              imgae: "/Customization_Integration.png",
               heading: "Mobile App Testing",
               des: "Ensure your app’s performance, functionality, and usability with thorough testing on multiple devices.",
             },
             {
-              imgae: "/app-launch.jpg",
+              imgae: "/Infographics_Design.png",
               heading: "App Launch & Deployment",
               des: "Launch your app on the App Store and Google Play Store with optimized app store listings and strategies.",
             },
             {
-              imgae: "/app-analytics.jpg",
+              imgae: "/Mobile-App-Design-Development.png",
               heading: "Mobile App Analytics & Optimization",
               des: "Track user behavior, analyze performance, and optimize your app to meet business objectives.",
             },
             {
-              imgae: "/app-marketing.jpg",
+              imgae: "/Social-Media-Marketing.png",
               heading: "Mobile App Marketing & Promotion",
               des: "Promote your app with tailored marketing strategies to increase visibility and user acquisition.",
             },
