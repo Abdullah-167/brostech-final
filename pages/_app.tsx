@@ -5,6 +5,8 @@ import Footer from "@/Components/Common/Layout/Footer";
 import Navbar from "@/Components/Common/Layout/Navbar";
 import ResNav from "@/Components/Common/Layout/ResNav";
 import Head from "next/head";
+import GoToTop from "@/Components/Common/GoToTop";
+import WhatsAppButton from "@/Components/Common/Whatsapp";
 
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
@@ -42,10 +44,16 @@ function MyApp({ Component, pageProps }: any) {
       <div>
         <Navbar />
       </div>
+      <div>
+        <GoToTop />
+      </div>
+      <div>
+        <WhatsAppButton />
+      </div>
       <div className="pt-24">
-      <Head>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+        <Head>
+          <link rel="icon" href="/favicon.png" />
+        </Head>
         <Component {...pageProps} />
       </div>
       <Footer />
