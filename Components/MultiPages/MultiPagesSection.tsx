@@ -82,9 +82,7 @@ const MultiPagesSection = ({ data }: any) => {
                   <p
                     className={`text-xl font-bold transition duration-300 px-[10px]  
                       ${
-                        openSection === index
-                          ? "text-primary"
-                          : "text-gray-900"
+                        openSection === index ? "text-primary" : "text-gray-900"
                       } 
                       group-hover:text-primary`}
                   >
@@ -124,9 +122,11 @@ const MultiPagesSection = ({ data }: any) => {
             <p className="mt-2 max-w-full lg:max-w-[600px]">
               {data?.ImageWithText[0]?.subheading}
             </p>
-            <button className="mt-4 px-6 py-2 bg-primary text-white rounded-lg">
-              {data?.ImageWithText[0]?.button}
-            </button>
+            <Link href={'/contact'}>
+              <button className="mt-4 px-6 py-2 bg-primary text-white rounded-lg">
+                {data?.ImageWithText[0]?.button}
+              </button>
+            </Link>
           </div>
           <div className="w-full max-w-[600px]">
             <Image
