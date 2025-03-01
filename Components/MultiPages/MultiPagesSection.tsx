@@ -83,10 +83,10 @@ const MultiPagesSection = ({ data }: any) => {
                     className={`text-xl font-bold transition duration-300 px-[10px]  
                       ${
                         openSection === index
-                          ? "text-blue-600"
+                          ? "text-primary"
                           : "text-gray-900"
                       } 
-                      group-hover:text-blue-600`}
+                      group-hover:text-primary`}
                   >
                     {data?.AccordianSection[0]?.[heading]}
                   </p>
