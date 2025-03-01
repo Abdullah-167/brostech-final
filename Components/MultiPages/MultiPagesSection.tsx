@@ -38,7 +38,7 @@ const MultiPagesSection = ({ data }: any) => {
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed ">
                 {data?.Hero[0]?.HeroSubHeading}
               </p>
-              <Link href={'/contact'}>
+              <Link href={"/contact"}>
                 <button className="bg-primary mt-5 text-white font-semibold rounded-lg shadow-md hover:bg-transparent hover:text-primary border border-primary transition duration-300 py-4 px-6">
                   {data?.Hero[0]?.HeroButton}
                 </button>
@@ -155,9 +155,9 @@ const MultiPagesSection = ({ data }: any) => {
             {data?.cardsSection[0]?.cardsDetail.map((card: any, index: any) => (
               <div
                 key={index}
-                className="w-full sm:max-w-full lg:max-w-xs p-6 hover:shadow-xl transition duration-300 ease-in-out border hover:border-blue-500 rounded-md"
+                className="w-full sm:max-w-full lg:max-w-xs p-6 hover:shadow-xl transition duration-300 ease-in-out border hover:border-primary rounded-md"
               >
-                <div className="text-6xl mb-4 text-blue-600">
+                <div className="text-6xl mb-4 text-primary">
                   <Image src={card.imgae} alt="" width={100} height={100} />
                 </div>
                 <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold pb-4">
