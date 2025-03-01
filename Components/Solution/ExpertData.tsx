@@ -18,8 +18,7 @@ import {
   FaPhotoVideo,
   FaFilePdf,
 } from "react-icons/fa";
-
-
+import { TbBrandWebflow } from "react-icons/tb";
 
 const ExpertsData = [
   {
@@ -38,6 +37,7 @@ const ExpertsData = [
     title: "Webflow Designing",
     content:
       "Designing sleek, responsive websites using Webflow’s easy-to-use design tools. Let us elevate your online image.",
+    icon: <TbBrandWebflow />, // Laravel icon
   },
   {
     title: "Laravel",

@@ -8,17 +8,8 @@ const Services = () => {
     <>
       <div className="py-20">
         <div className="flex justify-center mt-5">
-          <div className="web-img relative w-[420px] h-[270px] mt-5">
-            <Image
-              src="/webflow-Expert.png"
-              alt="Full-width Background"
-              layout="fill"
-              objectFit="contain"
-              priority
-            />
-          </div>
         </div>
-        <h3 className="text-center text-2xl font-medium mt-5">
+        <h3 className="text-center text-2xl sm:text-4xl font-medium mt-5 max-w-[900px] mx-auto">
           We offer a range of sub-services to enhance website creation and
           management
         </h3>

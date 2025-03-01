@@ -103,7 +103,7 @@ export default function Solving() {
           <div className=" flex flex-wrap justify-center md:grid grid-cols-2 lg:grid-cols-3 gap-4 mt-6 ">
             {industries.map((industry, index) => (
               <div key={index} className=" p-4 border border-primary rounded-lg text-start">
-                <div className="icon text-3xl mb-2">{industry.icon}</div>
+                <div className="icon text-3xl mb-2 text-primary">{industry.icon}</div>
                 <h3 className="text-lg font-semibold mt-2">{industry.name}</h3>
                 <p className="text-sm text-gray-600 mt-1">
                   {industry.description}
