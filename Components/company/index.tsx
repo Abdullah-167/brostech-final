@@ -11,10 +11,12 @@ export default function Company() {
   return (
     <>
       <Heero/>
-      <Team/>
-      <Mission/>
-      <CardData/>
       <Team_Experience/>
+      <Team/>
+      
+      <CardData/>
+      
+      <Mission/>
       <Better_together/>
       <Technologies/>
     </>

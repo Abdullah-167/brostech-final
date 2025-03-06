@@ -1,38 +1,30 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 export default function Heero() {
   return (
-    <>
-      <div className='heero flex flex-col items-center text-center px-4 '>
-        
-        {/* Text Section */}
-        <div className='mb-6'>
-          <button className='bg-slate-400 px-6 py-3 text-2xl font-bold rounded-lg'>
-            About
-          </button>
-          <h1 className='text-7xl font-bold py-5'>
-            Where Code Meets Creativity
-          </h1>
-          <h1 className='text-2xl'>
-            Everyone has a story. Here is ours becoming a leading Software Development Agency
-          </h1>
-        </div>
-
-        {/* Image Section */}
-        <div className="w-[90vw] h-[40vh] flex justify-center">
-          <Image 
-            src="/abc_company.avif" // Replace with your actual image path
-            alt="Description of image"
-            layout="intrinsic" // Ensures responsiveness
-            width={900} // Adjusted for better scaling
-            height={400} // Adjusted for 40% height equivalent
-            className="rounded-lg shadow-lg w-full h-full object-cover"
-            priority // Optimizes loading
-          />
-        </div>
-
+    <div className="heero flex flex-col items-center text-center px-6 md:px-12 lg:px-16 mb-10">
+      <div className="mb-6 py-3">
+        <button className="bg-green-500 px-6 py-3 text-xl md:text-2xl font-bold rounded-lg">
+          Concerning
+        </button>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold py-5">
+          Where Innovation Meets Excellence
+        </h1>
+        <h2 className="text-lg md:text-2xl px-4 md:px-0">
+          Everyone has a path… Here is ours, evolving into a top Software Development Agency
+        </h2>
       </div>
-    </>
-  )
+      <div className="relative w-full max-w-[1400px] h-[45vh] sm:h-[50vh] lg:h-[55vh] flex justify-center items-center">
+        <Image
+          src="/team_banner.avif" // Replace with your actual image path
+          alt="Description of image"
+          layout="fill" // Ensures it covers the container
+          objectFit="cover" // Makes sure image fills container properly
+          className="rounded-lg"
+          priority
+        />
+      </div>
+    </div>
+  );
 }

@@ -59,10 +59,10 @@ export default function Footer() {
       >
         <div className="text-center mb-16 mt-10">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
-            Ready to transform your Ideas into
+          Ready to bring your ideas to life?
           </h1>
           <h1 className="text-4xl md:text-6xl font-extrabold text-lime-400 leading-tight mt-4 mb-7">
-            Innovative Software Solutions?
+          Contact us today and let's make it happen!
           </h1>
           <Link href={"/contact"}>
             <button className="bg-primary text-white text-lg font-semibold rounded-lg shadow-md hover:bg-transparent hover:text-primary border border-primary transition duration-300 py-3 px-6">
