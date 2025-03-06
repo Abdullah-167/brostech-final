@@ -1,9 +1,13 @@
 import Container from "@/Components/Container";
+import Head from "next/head";
 import React from "react";
 
 const PrivacyPolicy = () => {
   return (
     <Container>
+       <Head>
+        <title>Privay Policy</title>
+      </Head>
       <div className=" mx-auto p-6">
         <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
         <p className="mb-4">Last Updated: 26 February 2025</p>

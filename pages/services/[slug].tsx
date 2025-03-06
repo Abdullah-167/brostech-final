@@ -1,3 +1,4 @@
+import Head from "next/head";
 import MultiPages from "../../Components/MultiPages/MultiPagesSection";
 import { pagesData } from "../../Components/MultiPages/pageData";
 
@@ -12,7 +13,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params } : any) {
+export async function getStaticProps({ params }: any) {
   const pageData = pagesData.find(
     (page) => page.pageTitle.toLowerCase().replace(/\s+/g, "-") === params.slug
   );
@@ -30,10 +31,21 @@ export async function getStaticProps({ params } : any) {
   };
 }
 
-const MultiPage = ({ pageData } : any) => {
+const MultiPage = ({ pageData }: any) => {
   if (!pageData) return <p>Page not found</p>;
 
-  return <MultiPages data={pageData.pageSectionsData} />;
+  return (
+    <>
+      <Head>
+        <title>{pageData.seoTitle} | Your Website Name</title>
+        <meta
+          name="description"
+          content={`Learn more about ${pageData.seoTitle}`}
+        />
+      </Head>
+      <MultiPages data={pageData.pageSectionsData} />
+    </>
+  );
 };
 
 export default MultiPage;

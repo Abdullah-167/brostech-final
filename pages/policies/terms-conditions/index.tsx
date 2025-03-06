@@ -1,9 +1,13 @@
 import Container from "@/Components/Container";
+import Head from "next/head";
 import React from "react";
 
 const TermsAndConditions = () => {
   return (
     <Container>
+       <Head>
+        <title>Terms & Conditions</title>
+      </Head>
       <div className="container mx-auto p-6">
         <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
         <p className="mb-4">Last Updated: 26 Fabruary 2025</p>

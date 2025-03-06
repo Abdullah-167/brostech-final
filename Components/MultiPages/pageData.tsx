@@ -1,6 +1,7 @@
 export const pagesData = [
   {
     pageTitle: "Graphics Designing",
+    seoTitle:'Graphics Designing',
     pageSectionsData: {
       Hero: [
         {
@@ -105,6 +106,7 @@ export const pagesData = [
   },
   {
     pageTitle: "WordPress",
+    seoTitle:'WordPress',
     pageSectionsData: {
       Hero: [
         {
@@ -207,6 +209,7 @@ export const pagesData = [
   },
   {
     pageTitle: "Shopify Development",
+    seoTitle:'Shopify Development',
     pageSectionsData: {
       Hero: [
         {
@@ -309,6 +312,7 @@ export const pagesData = [
   },
   {
     pageTitle: "Digital Marketing",
+    seoTitle:'Digital Marketing',
     pageSectionsData: {
       Hero: [
         {
@@ -411,6 +415,7 @@ export const pagesData = [
   },
   {
     pageTitle: "Custom Development",
+    seoTitle:'Custom Development',
     pageSectionsData: {
       Hero: [
         {
@@ -514,6 +519,7 @@ export const pagesData = [
   },
   {
     pageTitle: "Mobile App Development",
+    seoTitle:'Mobile App Development',
     pageSectionsData: {
       Hero: [
         {
