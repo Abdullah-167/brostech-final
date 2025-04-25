@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
-import MainHome from '../Components/home/MainHome'
-export default function index() {
+// Importing your WelcomeAnimation component
+
+// Importing your main homepage component
+import MainHome from "../Components/home/MainHome";
+
+export default function HomePage() {
+ 
+
   return (
     <>
-     <MainHome/>
+        <div>
+          {/* <WelcomeAnimation /> */}
+          <MainHome /> 
+        </div>
     </>
-  )
+  );
 }

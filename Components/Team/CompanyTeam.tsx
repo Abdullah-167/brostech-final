@@ -113,7 +113,7 @@ const teamdata = [
   },
   {
     title: "Muhammad Abdullah",
-    post: "Web Developer",
+    post: "Chief Digital Strategist",
     linkedin: <CiLinkedin size={30} />,
     linkProfile: "https://www.linkedin.com/in/abdullah-bizgrowth/",
     cover: "/abdullah.jpg",
