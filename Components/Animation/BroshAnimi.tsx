@@ -1,33 +1,14 @@
-import React from "react";
-
-const BroshAnimi = ({ onAnimationEnd }: any) => {
+const Animation = ({ onAnimationEnd }: any) => {
   return (
     <div
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100vw",
-        height: "100vh",
-        zIndex: 9999,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        overflow: "hidden",
-        padding: 0,
-        margin: 0,
-      }}
+      className="fixed inset-0 bg-white flex justify-center items-center z-[9999]"
     >
       <video
         autoPlay
         muted
         playsInline
         onEnded={onAnimationEnd}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
+        className="w-full max-w-[400px] md:max-w-full h-auto object-contain"
       >
         <source src="/broshanimi.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -36,4 +17,4 @@ const BroshAnimi = ({ onAnimationEnd }: any) => {
   );
 };
 
-export default BroshAnimi;
+export default Animation;
