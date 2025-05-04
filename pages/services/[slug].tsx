@@ -37,7 +37,7 @@ const MultiPage = ({ pageData }: any) => {
   return (
     <>
       <Head>
-        <title>{pageData.seoTitle} | Your Website Name</title>
+        <title>{pageData.seoTitle} | Brosh Tech</title>
         <meta
           name="description"
           content={`Learn more about ${pageData.seoTitle}`}
