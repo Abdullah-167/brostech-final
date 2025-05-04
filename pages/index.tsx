@@ -15,7 +15,7 @@ export default function HomePage() {
     <>
       <Head>
         <title>Home - BroshTech</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
       {showSplash ? (
