@@ -1,28 +1,33 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import React from "react";
 
-const Animation = ({ onAnimationEnd }: any) => {
+const BroshAnimi = ({ onAnimationEnd }: any) => {
   return (
     <div
-      className="splash-screen"
       style={{
         position: "fixed",
         top: 0,
         left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: "black",
+        width: "100vw",
+        height: "100vh",
+        zIndex: 9999,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        zIndex: 9999,
+        overflow: "hidden",
+        padding: 0,
+        margin: 0,
       }}
     >
       <video
         autoPlay
         muted
+        playsInline
         onEnded={onAnimationEnd}
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
       >
         <source src="/broshanimi.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -31,4 +36,4 @@ const Animation = ({ onAnimationEnd }: any) => {
   );
 };
 
-export default Animation;
+export default BroshAnimi;

@@ -10,14 +10,6 @@ export default function HomePage() {
     setShowSplash(false);
   };
 
-  useEffect(() => {
-    // Optionally add a timeout in case the video fails to load
-    const timer = setTimeout(() => {
-      setShowSplash(false);
-    }, 10000); // Fallback after 10 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
