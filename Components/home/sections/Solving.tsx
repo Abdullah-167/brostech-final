@@ -1,3 +1,4 @@
+"use client";
 import Container from "@/Components/Container";
 import {
   FaDumbbell,
@@ -12,6 +13,21 @@ import {
   FaWallet,
   FaMicrochip,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.95 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
 
 export default function Solving() {
   const industries = [
@@ -93,27 +109,44 @@ export default function Solving() {
   return (
     <Container>
       <div className="flex flex-col items-center text-center pt-10 pb-16 px-4">
-        <div className="flex flex-col items-center text-center py-16 p-4 mb-5">
+        {/* Animated Heading */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="py-16 p-4 mb-5"
+        >
           <h1 className="text-3xl md:text-5xl font-bold text-black mb-5">
-            Solving IT challenges in every <br className="hidden md:inline" />{" "}
+            Solving IT challenges in every <br className="hidden md:inline" />
             industry, every day.
           </h1>
+        </motion.div>
 
-          {/* Industry Categories */}
-          <div className=" flex flex-wrap justify-center md:grid grid-cols-2 lg:grid-cols-3 gap-4 mt-6 ">
-            {industries.map((industry, index) => (
-              <div key={index} className=" p-4 border border-primary rounded-lg text-start">
-                <div className="icon text-3xl mb-2 text-primary">{industry.icon}</div>
-                <h3 className="text-lg font-semibold mt-2">{industry.name}</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  {industry.description}
-                </p>
+        {/* Animated Industry Cards */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex flex-wrap justify-center md:grid grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+        >
+          {industries.map((industry, index) => (
+            <motion.div
+              key={index}
+              variants={cardVariants}
+              custom={index}
+              className="p-4 border border-primary rounded-lg text-start bg-white shadow-md hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="icon text-3xl mb-2 text-primary">
+                {industry.icon}
               </div>
-            ))}
-          </div>
-
-
-        </div>
+              <h3 className="text-lg font-semibold mt-2">{industry.name}</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                {industry.description}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </Container>
   );

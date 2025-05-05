@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaWordpress, FaNodeJs, FaReact, FaShopify } from "react-icons/fa";
@@ -7,7 +8,7 @@ import Container from "@/Components/Container";
 export default function Technologies() {
   return (
     <Container>
-      <div className="flex flex-col lg:flex-row items-center justify-between px-10 py-20 ">
+      <div className="flex flex-col lg:flex-row items-center justify-between px-10 py-20">
         {/* Left Side - Text Section */}
         <div className="lg:w-1/2 space-y-6">
           <h1 className="text-5xl font-bold">Technologies & Platforms</h1>
@@ -26,16 +27,18 @@ export default function Technologies() {
           <div className="flex gap-20 mb-6">
             <motion.div
               initial={{ opacity: 0, y: -70 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
             >
               <FaWordpress className="text-blue-500 text-6xl" />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: -70 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
             >
               <SiWebflow className="text-indigo-600 text-6xl" />
             </motion.div>
@@ -45,8 +48,9 @@ export default function Technologies() {
           <div className="flex items-center gap-20 mb-6">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
             >
               <FaShopify className="text-green-600 text-6xl" />
             </motion.div>
@@ -58,8 +62,9 @@ export default function Technologies() {
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
+              viewport={{ once: true }}
             >
               <SiLaravel className="text-red-500 text-6xl" />
             </motion.div>
@@ -69,24 +74,27 @@ export default function Technologies() {
           <div className="flex gap-20">
             <motion.div
               initial={{ opacity: 0, y: 70 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
+              viewport={{ once: true }}
             >
               <SiFlutter className="text-blue-400 text-6xl" />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 70 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
+              viewport={{ once: true }}
             >
               <FaNodeJs className="text-green-500 text-6xl" />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 70 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.4 }}
+              viewport={{ once: true }}
             >
               <FaReact className="text-blue-300 text-6xl" />
             </motion.div>

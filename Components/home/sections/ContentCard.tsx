@@ -1,69 +1,108 @@
+"use client";
 import Container from "@/Components/Container";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function ContentCard() {
   return (
     <Container>
-      <div className="flex flex-col lg:flex-row  gap-10 items-center justify-center min-h-screen p-5">
-        {/* Left Column (First & Third Box) */}
+      <div className="flex flex-col lg:flex-row gap-10 items-center justify-center min-h-screen p-5 overflow-hidden">
+        {/* Left Box */}
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="bg-primary text-black rounded-3xl shadow-lg p-12 max-w-[700px]"
+        >
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-5xl font-bold"
+          >
+            We use latest
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-5xl font-bold"
+          >
+            technologies to run
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-5xl font-bold"
+          >
+            your project
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            viewport={{ once: true }}
+            className="text-5xl font-bold mb-8"
+          >
+            smoothly
+          </motion.p>
 
-        <div className=" bg-primary text-black rounded-3xl shadow-lg p-12 max-w-[700px]">
-          <h1 className="text-5xl font-bold">We use latest</h1>
-          <p className="text-5xl font-bold"> technologies to run</p>
-          <h2 className="text-5xl font-bold">your project</h2>
-          <p className="text-5xl font-bold mb-8"> smoothly</p>
           <div className="flex flex-wrap gap-2">
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              WordPress
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              Shopify
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              Shopify Plus
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              {" "}
-              Angular js
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              React
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              Laravel
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              Vue Js Plus
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              Flutter
-            </button>
-            <button className="bg-black p-3 text-white rounded-3xl mx-1">
-              Next Js
-            </button>
+            {technologies.map((tech, index) => (
+              <motion.button
+                key={tech}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.6 + index * 0.1,
+                  duration: 0.3,
+                }}
+                viewport={{ once: true }}
+                className="bg-black text-white p-3 rounded-3xl mx-1"
+              >
+                {tech}
+              </motion.button>
+            ))}
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right Column (Second & Fourth Box with Margin on Top) */}
-        <div className="sm:max-w-[520px] w-full h-full  bg-black text-white rounded-3xl shadow-lg py-[74px] px-5">
-          <h1 className="text-4xl font-bold">
+        {/* Right Box */}
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="sm:max-w-[520px] w-full h-full bg-black text-white rounded-3xl shadow-lg py-[74px] px-5"
+        >
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-4xl font-bold"
+          >
             We help brands grow & stand out through strategic design, compelling
             storytelling, and data-driven marketing.
-          </h1>
-        </div>
+          </motion.h1>
+        </motion.div>
       </div>
     </Container>
   );
 }
 
-const buttons = [
-  "Custom Web Development",
-  "eCommerce Store Development",
-  "Branding & Logo Design",
-  "UI/UX Design",
-  "SEO & Digital Marketing",
-  "Conversion Rate Optimization",
-  "Social Media Marketing",
-  "Performance Advertising",
-  "Content Strategy",
+const technologies = [
+  "WordPress",
+  "Shopify",
+  "Shopify Plus",
+  "Angular js",
+  "React",
+  "Laravel",
+  "Vue Js Plus",
+  "Flutter",
+  "Next Js",
 ];
