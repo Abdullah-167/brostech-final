@@ -7,6 +7,7 @@ import ResNav from "@/Components/Common/Layout/ResNav";
 import Head from "next/head";
 import GoToTop from "@/Components/Common/GoToTop";
 import WhatsAppButton from "@/Components/Common/Whatsapp";
+import CookieConsent from "@/Components/Common/CookieConsent";
 
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
@@ -56,6 +57,7 @@ function MyApp({ Component, pageProps }: any) {
         </Head>
         <Component {...pageProps} />
       </div>
+      <CookieConsent />
       <Footer />
     </>
   );
